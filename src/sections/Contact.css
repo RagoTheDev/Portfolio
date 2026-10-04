@@ -1,0 +1,112 @@
+.contact {
+  padding: 6rem 0;
+  background-color: var(--primary-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+.contact__content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.contact__heading {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--primary-text);
+  max-width: 800px;
+}
+
+.contact__links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--primary-text);
+  background-color: transparent;
+  color: var(--primary-text);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all var(--transition-normal);
+  border-radius: 0;
+  text-decoration: none;
+}
+
+.contact__link:hover {
+  background-color: var(--primary-text);
+  color: var(--primary-bg);
+  transform: translateY(-2px);
+}
+
+.contact__placeholder {
+  font-size: 1.05rem;
+  color: var(--secondary-text);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 0;
+  }
+
+  .contact__heading {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+  }
+
+  .contact__links {
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact__link {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 3rem 0;
+  }
+
+  .contact__heading {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+  }
+
+  .contact__links {
+    gap: 0.75rem;
+  }
+
+  .contact__link {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .contact__link span {
+    display: none;
+  }
+}
+
+.contact { background: var(--primary-text); border-top: 0; }
+.contact__content { max-width: 1000px; gap: 2.5rem; }
+.contact__heading { color: var(--primary-bg); font-size: clamp(3rem, 7vw, 6.5rem); line-height: 1.06; max-width: 950px; margin: 0; text-wrap: balance; }
+.contact__links { gap: 0.75rem; }
+.contact__link { border: 1px solid var(--primary-bg); color: var(--primary-bg); border-radius: 4px; font-size: 0.85rem; padding: 0.85rem 1.3rem; }
+.contact__link:hover { background: var(--primary-bg); color: var(--primary-text); }
+.contact__placeholder { color: var(--primary-bg); }
+@media (max-width: 768px) { .contact__heading { font-size: clamp(2.75rem, 9vw, 4.5rem); } }
+@media (max-width: 480px) { .contact__link span { display: inline; } }

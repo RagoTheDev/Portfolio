@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(--primary-bg);
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footer__name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-text);
+  letter-spacing: 0.05em;
+}
+
+.footer__title {
+  font-size: 0.9rem;
+  color: var(--secondary-text);
+  font-weight: 500;
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  color: var(--primary-text);
+  transition: all var(--transition-normal);
+  background-color: transparent;
+}
+
+.footer__link:hover {
+  border-color: var(--primary-text);
+  background-color: var(--primary-text);
+  color: var(--primary-bg);
+}
+
+.footer__bottom {
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 0.85rem;
+  color: var(--secondary-text);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer__links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0 1rem;
+  }
+
+  .footer__content {
+    gap: 1rem;
+  }
+
+  .footer__name {
+    font-size: 1rem;
+  }
+
+  .footer__title {
+    font-size: 0.85rem;
+  }
+
+  .footer__links {
+    gap: 1rem;
+  }
+
+  .footer__link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__copyright {
+    font-size: 0.8rem;
+  }
+}
+
+.footer { margin: 0; padding-block: 3rem 2rem; border: 0; background: var(--surface); }
+.footer__content { padding-bottom: 2rem; }
+.footer__name { font-size: 1.15rem; letter-spacing: -0.04em; }
+.footer__title { margin: 0; }
+.footer__links { gap: 0.65rem; }
+.footer__link { border-radius: 4px; width: 44px; height: 44px; }
+.footer__bottom { text-align: left; }
+.footer__copyright { margin: 0; font-size: 0.75rem; }
+@media (max-width: 768px) { .footer { padding-block: 2.5rem 1.5rem; } }
